@@ -10267,7 +10267,7 @@ window["cr_setSuspended"] = function(s)
 			this.is_else_block = (this.conditions[0].type == null && this.conditions[0].func == cr.system_object.prototype.cnds.Else);
 		}
 	};
-	window["_c2hh_"] = "E2DD4C3F49D55698ED266C93DB90E5C649D49D1B";
+	window["_c2hh_"] = "C9D881AD61047B7C1701489D1CFC3690A86E3568";
 	EventBlock.prototype.postInit = function (hasElse/*, prevBlock_*/)
 	{
 		var i, len;
@@ -22978,14 +22978,15 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Audio,
 	cr.plugins_.Function,
 	cr.plugins_.Sprite,
-	cr.plugins_.Text,
 	cr.plugins_.TiledBg,
 	cr.plugins_.Touch,
+	cr.plugins_.Text,
 	cr.behaviors.Flash,
 	cr.system_object.prototype.cnds.OnLayoutStart,
 	cr.plugins_.Sprite.prototype.acts.Destroy,
 	cr.plugins_.AJAX.prototype.acts.RequestFile,
 	cr.plugins_.Function.prototype.acts.CallFunction,
+	cr.plugins_.Sprite.prototype.acts.SetOpacity,
 	cr.plugins_.AJAX.prototype.cnds.OnComplete,
 	cr.system_object.prototype.acts.SetVar,
 	cr.plugins_.AJAX.prototype.exps.LastData,
@@ -22994,17 +22995,9 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.exps.tokenat,
 	cr.plugins_.Arr.prototype.exps.Back,
 	cr.system_object.prototype.cnds.PickNth,
-	cr.plugins_.Touch.prototype.cnds.OnTapGestureObject,
-	cr.plugins_.Sprite.prototype.cnds.IsBoolInstanceVarSet,
-	cr.system_object.prototype.acts.CreateObject,
-	cr.behaviors.Flash.prototype.acts.Flash,
-	cr.plugins_.Text.prototype.cnds.CompareText,
-	cr.system_object.prototype.acts.AddVar,
-	cr.plugins_.Audio.prototype.acts.Play,
-	cr.system_object.prototype.cnds.Else,
-	cr.system_object.prototype.cnds.PickAll,
-	cr.plugins_.Sprite.prototype.acts.SetBoolInstanceVar,
+	cr.plugins_.Touch.prototype.cnds.OnTouchObject,
 	cr.plugins_.Arr.prototype.acts.Pop,
+	cr.plugins_.Sprite.prototype.acts.SetAnimFrame,
 	cr.system_object.prototype.acts.GoToLayout,
 	cr.system_object.prototype.acts.ResetGlobals,
 	cr.system_object.prototype.cnds.For,
@@ -23012,6 +23005,14 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Arr.prototype.exps.IndexOf,
 	cr.system_object.prototype.exps.floor,
 	cr.system_object.prototype.exps.random,
-	cr.plugins_.Arr.prototype.acts.Push
+	cr.plugins_.Arr.prototype.acts.Push,
+	cr.system_object.prototype.cnds.CompareVar,
+	cr.plugins_.Sprite.prototype.cnds.IsOverlapping,
+	cr.plugins_.Text.prototype.cnds.CompareText,
+	cr.system_object.prototype.acts.AddVar,
+	cr.plugins_.Audio.prototype.acts.Play,
+	cr.system_object.prototype.cnds.Else,
+	cr.system_object.prototype.cnds.ForEach,
+	cr.behaviors.Flash.prototype.acts.Flash
 ];};
 
